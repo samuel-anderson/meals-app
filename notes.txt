@@ -1,0 +1,24 @@
+STEPS:
+
+1. Plan the flow and mock of application
+2. Gather ideas for fonts, icons, images, native components, custom components, etc.
+
+3. Create empty screen files for screen folder
+4. Create component folder 
+5. Add boilerplate code: components, constants, etc.
+6. Create boilerplace for all screens to have basic navigation
+
+
+7. Fetch fonts
+    A. `sudo npm install --save expo-font`
+
+8. Install navigation
+    A. `sudo npm install --save react-navigation`
+    B. `sudo expo install react-native-gesture-handler react-native-reanimated react-native-screens react-native-safe-area-context @react-native-community/masked-view`
+    C. `sudo npm install --save react-navigation-stack`
+    D. `sudo npm install --save react-navigation-tabs`
+    E. `sudo npm install --save react-navigation-drawer`
+
+import { createStackNavigator } from 'react-navigation-stack';
+import { createBottomTabNavigator } from 'react-navigation-tabs';
+import { createDrawerNavigator } from 'react-navigation-drawer';
