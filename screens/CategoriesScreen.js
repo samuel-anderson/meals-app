@@ -9,6 +9,9 @@ const CategoriesScreen = props => {
             <Text>Categories Screen</Text>
             <Button title="Go to meals!" onPress={()=>{
                 props.navigation.navigate({routeName: 'CategoryMeals'})
+                //props.navigation.push('CategoryMeals')
+                // .replace('Screen') after user logs in
+                //https://reactnavigation.org/docs/4.x/navigation-prop
             }} />
         </View>
     )
