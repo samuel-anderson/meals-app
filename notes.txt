@@ -1,3 +1,8 @@
+DEVELOPMENT:
+
+1. Create Boilerplate Code 
+2. Create NPM scripts for package installment
+
 STEPS:
 
 1. Plan the flow and mock of application
@@ -10,15 +15,18 @@ STEPS:
 
 
 7. Fetch fonts
-    A. `sudo npm install --save expo-font`
 
-8. Install navigation
-    A. `sudo npm install --save react-navigation`
-    B. `sudo expo install react-native-gesture-handler react-native-reanimated react-native-screens react-native-safe-area-context @react-native-community/masked-view`
-    C. `sudo npm install --save react-navigation-stack`
-    D. `sudo npm install --save react-navigation-tabs`
-    E. `sudo npm install --save react-navigation-drawer`
+sudo npm install --save expo-font
 
+8a. Install navigation
+
+sudo npm install --save react-navigation
+sudo expo install react-native-gesture-handler react-native-reanimated react-native-screens react-native-safe-area-context @react-native-community/masked-view
+sudo npm install --save react-navigation-stack
+sudo npm install --save react-navigation-tabs
+sudo npm install --save react-navigation-drawer
+
+8b. Import navigation
 import { createStackNavigator } from 'react-navigation-stack';
 import { createBottomTabNavigator } from 'react-navigation-tabs';
 import { createDrawerNavigator } from 'react-navigation-drawer';
