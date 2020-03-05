@@ -30,3 +30,8 @@ sudo npm install --save react-navigation-drawer
 import { createStackNavigator } from 'react-navigation-stack';
 import { createBottomTabNavigator } from 'react-navigation-tabs';
 import { createDrawerNavigator } from 'react-navigation-drawer';
+
+sudo npm install --save react-native-screens
+
+
+** Added Prettier plugin and configured for format on save
