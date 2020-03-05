@@ -1,3 +1,34 @@
+STRUCTURE
+    Boilerplate Code, Spread Patterns, ES6, Screens, Models, Navigators, Components, Constants, etc.
+    Planning : 
+        API, data, models, screens and navigation
+        Flexbox styling, fonts, icons, images
+        
+DEVELOPMENT
+    NPM scripts and packages
+BUILDING BLOCKS
+    React Native Components
+        TouchableOpacity
+        Text, View, Button, FlatList, StyleSheet, etc.
+        createStackNavigator, createAppContainer, etc.
+STATE, DATA, PAPRAMETERS
+    props
+    useState
+    props.navigation
+        .navigate
+        .pop 
+        .back
+        .etc
+ASSETS
+    Local Images use require()
+    Fonts
+LIBRARIES
+    react, react-native, expo, expo-font, custom components*
+
+
+
+
+
 DEVELOPMENT:
 
 1. Create Boilerplate Code 
