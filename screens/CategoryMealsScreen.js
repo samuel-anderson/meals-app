@@ -22,15 +22,6 @@ const CategoryMealScreen = props => {
   };
   return (
     <View style={styles.screen}>
-      {/* <Text>Category Meal Screen</Text>
-      <Button title="Go to details!" onPress={navigateFunc} />
-
-      <Button
-        title="Go Back!"
-        onPress={() => {
-          props.navigation.goBack(); //Or .pop()
-        }}
-      /> */}
       <FlatList
         keyExtractor={(item, index) => item.id}
         data={displayedMeals}
@@ -54,7 +45,8 @@ const styles = StyleSheet.create({
   screen: {
     flex: 1,
     justifyContent: "center",
-    alignItems: "center"
+    alignItems: "center",
+    padding: 15
   }
 });
 
