@@ -3,7 +3,7 @@ STRUCTURE
     Planning : 
         API, data, models, screens and navigation
         Flexbox styling, fonts, icons, images
-        
+
 DEVELOPMENT
     NPM scripts and packages
 BUILDING BLOCKS
@@ -66,3 +66,7 @@ sudo npm install --save react-native-screens
 
 
 ** Added Prettier plugin and configured for format on save
+
+9. Package for Header icons
+
+npm install --save react-navigation-header-buttons

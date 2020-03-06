@@ -10,14 +10,16 @@ const CategoryMealScreen = props => {
     meal => meal.categoryIds.indexOf(catId) >= 0
   );
 
-  const navigateFunc = () => {
-    props.navigation.navigate({
-      routeName: "MealDetail",
-      params: {}
-    });
-  };
-
   const renderMealItem = itemData => {
+    const navigateFunc = () => {
+      props.navigation.navigate({
+        routeName: "MealDetail",
+        params: {
+          mealId: itemData.item.id
+        }
+      });
+    };
+
     return <MealItem data={itemData.item} onSelectMeal={navigateFunc} />;
   };
   return (
