@@ -70,3 +70,4 @@ sudo npm install --save react-native-screens
 9. Package for Header icons
 
 npm install --save react-navigation-header-buttons
+npm install --save react-navigation-tabs
