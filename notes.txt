@@ -71,3 +71,6 @@ sudo npm install --save react-native-screens
 
 npm install --save react-navigation-header-buttons
 npm install --save react-navigation-tabs
+
+npm install --save react-navigation-material-bottom-tabs
+npm install --save react-native-paper
