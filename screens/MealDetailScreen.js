@@ -12,6 +12,14 @@ import { MEALS } from "../data/dummy-data";
 import HeaderButton from "../components/HeaderButton";
 import DefaultText from "../components/DefaultText";
 
+const ListItem = props => {
+  return (
+    <View style={styles.listItem}>
+      <DefaultText>{props.children}</DefaultText>
+    </View>
+  );
+};
+
 const MealDetailScreen = props => {
   const mealId = props.navigation.getParam("mealId");
   const selectedMeal = MEALS.find(meal => meal.id === mealId);
@@ -25,10 +33,15 @@ const MealDetailScreen = props => {
       </View>
 
       <Text style={styles.title}>Ingredients</Text>
-      <Text>List of ingredients...</Text>
+      {selectedMeal.ingredients.map(ingredient => {
+        return <ListItem key={ingredient}>{ingredient}</ListItem>;
+      })}
 
       <Text style={styles.title}>Steps</Text>
-      <Text>List of steps...</Text>
+
+      {selectedMeal.steps.map(step => {
+        return <ListItem key={step}>{step}</ListItem>;
+      })}
     </ScrollView>
   );
 };
@@ -64,6 +77,18 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     padding: 15,
     justifyContent: "space-around"
+  },
+  title: {
+    fontFamily: "open-sans-bold",
+    fontSize: 22,
+    textAlign: "center"
+  },
+  listItem: {
+    marginVertical: 10,
+    marginHorizontal: 20,
+    borderColor: "#ccc",
+    borderWidth: 1,
+    padding: 10
   }
 });
 
