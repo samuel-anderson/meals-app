@@ -82,9 +82,9 @@ const tabScreenConfig = {
       tabBarLabel: () => {
         const label =
           Platform.OS === "android" ? (
-            <Text style={{ fontFamily: "open-sans-bold" }}>Meals</Text>
+            <Text style={{ fontFamily: "open-sans-bold" }}>Favorites</Text>
           ) : (
-            <Text>Meals</Text>
+            <Text>Favorites</Text>
           );
 
         return label;
