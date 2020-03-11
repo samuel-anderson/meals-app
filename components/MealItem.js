@@ -6,6 +6,7 @@ import {
   TouchableOpacity,
   ImageBackground
 } from "react-native";
+import DefaultText from "../components/DefaultText";
 
 const MealItem = props => {
   const meal = props.data;
@@ -26,9 +27,9 @@ const MealItem = props => {
             </ImageBackground>
           </View>
           <View style={{ ...styles.mealRow, ...styles.mealDetail }}>
-            <Text>{meal.duration}m</Text>
-            <Text>{meal.complexity.toUpperCase()}</Text>
-            <Text>{meal.affordability.toUpperCase()}</Text>
+            <DefaultText>{meal.duration}m</DefaultText>
+            <DefaultText>{meal.complexity.toUpperCase()}</DefaultText>
+            <DefaultText>{meal.affordability.toUpperCase()}</DefaultText>
           </View>
         </View>
       </TouchableOpacity>
