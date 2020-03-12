@@ -10,6 +10,7 @@ import { Provider } from "react-redux";
 
 enableScreens();
 
+//Reducer
 const rootReducer = combineReducers({
   mealsR: mealsReducer
 });
