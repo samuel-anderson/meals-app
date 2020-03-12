@@ -11,7 +11,7 @@ import { Provider } from "react-redux";
 enableScreens();
 
 const rootReducer = combineReducers({
-  meals: mealsReducer
+  mealsR: mealsReducer
 });
 
 const store = createStore(rootReducer);

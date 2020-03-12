@@ -142,5 +142,4 @@ const MainNavigator = createDrawerNavigator(
 
 //export default createAppContainer(MealsNavigator);
 //export default createAppContainer(MealsFavTabNavigator);
-
 export default createAppContainer(MainNavigator);

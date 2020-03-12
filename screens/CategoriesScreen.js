@@ -1,11 +1,5 @@
 import React from "react";
-import {
-  View,
-  Text,
-  StyleSheet,
-  FlatList,
-  TouchableOpacity
-} from "react-native";
+import { StyleSheet, FlatList } from "react-native";
 
 import { HeaderButtons, Item } from "react-navigation-header-buttons";
 import HeaderButton from "../components/HeaderButton";
@@ -31,16 +25,6 @@ const CategoriesScreen = props => {
     );
   };
   return (
-    // <View style={styles.screen}>
-    //     <Text>Categories Screen</Text>
-    //     <Button title="Go to meals!" onPress={()=>{
-    //         props.navigation.navigate({routeName: 'CategoryMeals'})
-    //         //props.navigation.push('CategoryMeals')
-    //         // .replace('Screen') after user logs in
-    //         //https://reactnavigation.org/docs/4.x/navigation-prop
-    //     }} />
-    // </View>
-
     <FlatList
       keyExtractor={(item, index) => item.id}
       data={CATEGORIES}
@@ -69,12 +53,6 @@ CategoriesScreen.navigationOptions = navData => {
   };
 };
 
-const styles = StyleSheet.create({
-  screen: {
-    flex: 1,
-    justifyContent: "center",
-    alignItems: "center"
-  }
-});
+const styles = StyleSheet.create({});
 
 export default CategoriesScreen;
