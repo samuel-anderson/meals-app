@@ -74,3 +74,7 @@ npm install --save react-navigation-tabs
 
 npm install --save react-navigation-material-bottom-tabs
 npm install --save react-native-paper
+
+REDUX is about managing a central store
+
+sudo npm install --save redux react-redux
